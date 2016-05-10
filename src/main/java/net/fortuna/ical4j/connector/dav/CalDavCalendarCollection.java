@@ -583,8 +583,8 @@ public class CalDavCalendarCollection extends AbstractDavObjectCollection<Calend
         org.w3c.dom.Element timeRange = DomUtil.createElement(document, CalDavConstants.PROPERTY_TIME_RANGE,
                 CalDavConstants.CALDAV_NAMESPACE);
 
-        timeRange.setAttribute(CalDavConstants.ATTRIBUTE_START, startTime.toString());
-        timeRange.setAttribute(CalDavConstants.ATTRIBUTE_END, endTime.toString());
+        timeRange.setAttribute(CalDavConstants.ATTRIBUTE_START, startTime.toString()+"Z");
+        timeRange.setAttribute(CalDavConstants.ATTRIBUTE_END, endTime.toString()+"Z");
         eventFilter.appendChild(timeRange);
         calFilter.appendChild(eventFilter);
 
