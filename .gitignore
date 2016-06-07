@@ -2,3 +2,5 @@
 ical4j-connector.iml
 build
 .gradle
+/bin/
+/target/
