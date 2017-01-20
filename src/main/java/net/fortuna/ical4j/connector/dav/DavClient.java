@@ -84,7 +84,7 @@ public class DavClient {
 
 	void begin() {
 		httpClient = new HttpClient();
-		httpClient.getParams().setAuthenticationPreemptive(false);
+		httpClient.getParams().setAuthenticationPreemptive(true);
 	}
 
 	ArrayList<SupportedFeature> begin(String username, char[] password) throws IOException, FailedOperationException {
